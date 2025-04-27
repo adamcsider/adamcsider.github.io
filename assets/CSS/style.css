@@ -166,19 +166,19 @@
   }
   
   .table-striped tbody tr:nth-of-type(odd) {
-    background-color: rgba(0, 0, 0, 0.03); /* világos módhoz */
+    background-color: rgba(0, 0, 0, 0.03);
   }
   
   body.dark-mode .table-striped tbody tr:nth-of-type(odd) {
-    background-color: rgba(255, 255, 255, 0.05); /* sötét módhoz */
+    background-color: rgba(255, 255, 255, 0.05);
   }
   
   .table-hover tbody tr:hover {
-    background-color: rgba(0, 0, 0, 0.05); /* világos módhoz */
+    background-color: rgba(0, 0, 0, 0.05);
   }
   
   body.dark-mode .table-hover tbody tr:hover {
-    background-color: rgba(255, 255, 255, 0.08); /* sötét módhoz */
+    background-color: rgba(255, 255, 255, 0.08);
   }
 
 .table,
@@ -187,4 +187,32 @@
 .table-striped tbody tr,
 .table-hover tbody tr {
   transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+input,
+textarea,
+select {
+  background-color: var(--card-bg);
+  color: var(--text-color);
+  border: 1px solid #ccc;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+body.dark-mode input,
+body.dark-mode textarea,
+body.dark-mode select {
+  background-color: var(--card-bg);
+  color: var(--text-color);
+  border: 1px solid #555;
+}
+
+form, 
+form input,
+form textarea,
+form select,
+form button,
+form .form-control,
+form .form-label {
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
 }
