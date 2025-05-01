@@ -3,63 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Munkáim</title>
+    <title>Csidér Ádám - Munkáim</title>
     <link rel="stylesheet" href="assets/CSS/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
-<body>
+<body style="background-image: url('assets/images/elte_deli3.jpg');">
 
- <nav class="navbar navbar-expand-lg shadow-sm">
+  <nav class="navbar navbar-expand-lg shadow-sm">
     <div class="container">
       <a class="navbar-brand" href="index.html">Csidér Ádám</a>
-      <div class="collapse navbar-collapse">
+  
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Navigáció váltása">
+        <span class="navbar-toggler-icon"><img src="assets/images/burger-bar.png"></span>
+      </button>
+  
+      <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto mx-5">
-          <li class="nav-item mr-3"><a class="nav-link" href="index.html">Rólam</a></li>
-          <li class="nav-item mr-3"><a class="nav-link" href="munkaim.html">Munkáim</a></li>
-          <li class="nav-item mr-3"><a class="nav-link" href="kapcsolat.html">Kapcsolat</a></li>
-          <a href="munkaim_EN.html" class="btn btn-outline-secondary custom-align w-25">
+          <li class="nav-item mr-3">
+            <a class="nav-link" href="index.html">Rólam</a>
+          </li>
+          <li class="nav-item mr-3">
+            <a class="nav-link" href="munkaim.html">Munkáim</a>
+          </li>
+          <li class="nav-item mr-3">
+            <a class="nav-link" href="kapcsolat.html">Kapcsolat</a>
+          </li>
+          <a href="munkaim_EN.html" class="btn btn-outline-secondary language-btn">
             <img class="rounded" src="assets/images/uk.png">
           </a>
-          <button onclick="toggleDarkMode()" class="btn btn-outline-secondary custom-align">💡</button>
+          <li>
+            <button onclick="toggleDarkMode()" class="btn btn-outline-secondary ml-lg-3 mt-2 mt-lg-0">💡</button>
+          </li>
         </ul>
       </div>
     </div>
   </nav>
-
-  <section id="munkaim" class="container-custom mt-5 mb-5 rounded">
+  
+  <section id="munkaim" class="container-custom mt-5 mb-auto transparent-box">
     <div class="row p-4 justify-content-center">
-      <div class="col-md-6 mb-4">
+      <div class="col-md-6 mb-auto">
+      <div class="table-responsive">
         <table class="table table-bordered table-striped table-hover rounded shadow">
-          <thead>
-            <tr>
-              <th scope="col">Projekt neve</th>
-              <th scope="col">Projekt éve</th>
-              <th scope="col">Projekt leírása</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Caesar-rejtjelező</td>
-              <td>2025</td>
-              <td>C nyelven megírt Caesar-rejtjelező, amely képes előre meghatározott mértékben eltolni a karaktereket, vagy kód vagy minta alapján kódolni az adott szöveget. Minden kódolt szöveget dekódolni is képes.</td>
-            </tr>
-            <tr>
-              <td>Érettségi feladat</td>
-              <td>2024</td>
-              <td>Python nyelven írt érettségi feladat. A feladat az alapvető algoritmusokat, programozási tételeket hivatott bemutatni. Maximális pontszámot ért el a feladat.</td>
-            </tr>
-            <tr>
-              <td>Hamarosan...</td>
-              <td>Hamarosan...</td>
-              <td>Hamarosan...</td>
-            </tr>
-          </tbody>
-        </table>
+            <thead>
+              <tr>
+                <th scope="col">Projekt neve</th>
+                <th scope="col">Projekt éve</th>
+                <th scope="col">Projekt leírása</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Caesar-rejtjelező</td>
+                <td>2025</td>
+                <td>C nyelven megírt Caesar-rejtjelező, amely képes előre meghatározott mértékben eltolni a karaktereket,
+                     vagy kód vagy minta alapján kódolni az adott szöveget. Minden kódolt szöveget dekódolni is képes.</td>
+              </tr>
+              <tr>
+                <td>Érettségi feladat</td>
+                <td>2024</td>
+                <td>Python nyelven írt érettségi feladat. A feladat az alapvető algoritmusokat,
+                     programozási tételeket hivatott bemutatni. Maximális pontszámot ért el a feladat.</td>
+              </tr>
+              <tr>
+                <td>Hamarosan...</td>
+                <td>Hamarosan...</td>
+                <td>Hamarosan...</td>
+              </tr>
+            </tbody>
+          </table>
+      </div>
+        
       </div>
       <div class="col-md-6 my-auto">
         <video class="w-100 rounded shadow" controls>
-          <source src="assets/videos/short_c.mp4" type="video/mp4">
+          <source src="assets/videos/short_c.mp4" type="video/mp4" alt="C - video">
           A böngésződ nem támogatja a videó lejátszását.
         </video>
       </div>
@@ -77,6 +96,9 @@
       localStorage.setItem('theme', mode);
     }
   </script>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
