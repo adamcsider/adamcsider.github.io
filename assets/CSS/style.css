@@ -17,7 +17,7 @@
   }
 
   .transparent-box {
-    background-color: rgba(255, 255, 255, 0.6);
+    background-color: var(--card-bg);
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
     padding: 2rem;
@@ -268,4 +268,67 @@ body.dark-mode label {
   max-width: 100%;
   max-height: 100%;
   object-fit: contain;
+}
+
+.list-group {
+  background-color: transparent;
+}
+
+.list-group-item {
+  background-color: var(--card-bg);
+  color: var(--text-color);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  margin-bottom: 0.75rem;
+  border-radius: 10px;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+body.dark-mode .list-group-item {
+  border-color: rgba(255, 255, 255, 0.12);
+}
+
+.list-group-item h4 {
+  margin-bottom: 0.75rem;
+  font-weight: 600;
+}
+
+.list-group-item p {
+  margin-bottom: 0.4rem;
+}
+
+.list-group-item p:first-child {
+  margin-top: 0.5rem;
+}
+
+body.dark-mode::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+  z-index: -1;
+}
+
+ol.list-group,
+ol.list-group.list-group-flush {
+  background-color: transparent !important;
+}
+
+.list-group-item {
+  background-color: var(--card-bg) !important;
+  color: var(--text-color) !important;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  margin-bottom: 0.75rem;
+  border-radius: 12px;
+}
+
+body.dark-mode .list-group-item {
+  border-color: rgba(255, 255, 255, 0.15);
+}
+
+.list-group-item + .list-group-item {
+  border-top-width: 1px;
+}
+
+.transparent-box {
+  background-color: var(--card-bg) !important;
 }
