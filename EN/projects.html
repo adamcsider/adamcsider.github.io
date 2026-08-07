@@ -61,22 +61,26 @@
           <span class="title-icon"></span> Projects
         </h4>
         <div class="table-responsive">
-          <table class="table table-hover">
+          <table class="table table-hover align-middle">
             <thead>
               <tr>
-                <th scope="col">Project name</th>
-                <th scope="col">Year</th>
-                <th scope="col">Description</th>
-                <th scope="col" class="text-center">GitHub</th>
+                <th scope="col" style="width: 25%;">Project name</th>
+                <th scope="col" style="width: 10%;">Year</th>
+                <th scope="col" style="width: 55%;">Description</th>
+                <th scope="col" class="text-center" style="width: 10%;">GitHub</th>
               </tr>
             </thead>
             <tbody>
+              
+              <!-- 1. Bomber game -->
               <tr>
-                <td class="font-weight-bold">Bomber game</td>
+                <td>
+                  <span class="fw-bold d-block">Bomber game</span>
+                  <small class="text-muted">C# | .NET | WPF | Avalonia</small>
+                </td>
                 <td>2025</td>
                 <td>
-                  Event-driven applications game developed within a university course.
-                  The project was made in WinForms, WPF, and Avalonia .NET frameworks. 
+                  Event-driven game developed within a university course. Built with a modular OOP architecture, event-driven game logic, and unit tests using the MSTest framework to ensure high code quality.
                 </td>
                 <td class="text-center">
                   <a href="https://github.com/adamcsider/EVA/tree/main" target="_blank" class="github-link" aria-label="GitHub repository">
@@ -84,13 +88,33 @@
                   </a>
                 </td>
               </tr>
+
+              <!-- 2. Parking Lot Reservation API -->
               <tr>
-                <td class="font-weight-bold">Portfolio website</td>
+                <td>
+                  <span class="fw-bold d-block">Parking Lot Reservation API</span>
+                  <small class="text-muted">Python | FastAPI | Docker</small>
+                </td>
+                <td>2026</td>
+                <td>
+                  Clean architecture REST API for managing parking spots and preventing reservation conflicts. Includes comprehensive documentation, Docker containerization, and pytest integration tests.
+                </td>
+                <td class="text-center">
+                  <a href="https://github.com/adamcsider/parky" target="_blank" class="github-link" aria-label="GitHub repository">
+                    <img src="../assets/images/github.png" alt="GitHub" class="github-icon">
+                  </a>
+                </td>
+              </tr>
+
+              <!-- 3. Portfolio website -->
+              <tr>
+                <td>
+                  <span class="fw-bold d-block">Portfolio website</span>
+                  <small class="text-muted">HTML5 | CSS3 | Bootstrap</small>
+                </td>
                 <td>2025</td>
                 <td>
-                  Website created as a university course assignment in web development. During the development of the site,
-                  I focused on responsiveness, so it is accessible on all devices. In addition, I strictly
-                  followed HTML5 and CSS standards, and the Bootstrap library was used for the design.
+                  Responsive static portfolio website created as a university course assignment. Built with a mobile-first approach while strictly adhering to modern HTML5 and CSS3 standards.
                 </td>
                 <td class="text-center">
                   <a href="https://github.com/adamcsider/adamcsider.github.io" target="_blank" class="github-link" aria-label="GitHub repository">
@@ -98,6 +122,24 @@
                   </a>
                 </td>
               </tr>
+
+              <!-- 4. AES-FFX Encryption -->
+              <tr>
+                <td>
+                  <span class="fw-bold d-block">AES-FFX Encryption</span>
+                  <small class="text-muted">Python | NIST Standard</small>
+                </td>
+                <td>2026</td>
+                <td>
+                  NIST-compliant Format-Preserving Encryption algorithm (A2 and A10 parameter collections) implemented in Python to simulate sensitive data obfuscation, specifically credit card numbers.
+                </td>
+                <td class="text-center">
+                  <a href="#" target="_blank" class="github-link" aria-label="GitHub repository">
+                    <img src="../assets/images/github.png" alt="GitHub" class="github-icon">
+                  </a>
+                </td>
+              </tr>
+
             </tbody>
           </table>
         </div>
@@ -118,7 +160,7 @@
             </thead>
             <tbody>
               <tr>
-                <td class="text-muted">Soon...</td>
+                <td class="text-muted">Coming soon...</td>
                 <td class="text-muted">-</td>
               </tr>
             </tbody>

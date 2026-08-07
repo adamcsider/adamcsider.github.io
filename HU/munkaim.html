@@ -44,39 +44,42 @@
   </div>
 </nav>
 
-
 <section class="projects-section">
   <div class="container">
     <div class="transparent-box">
       
-
+      <!-- Cím és alcím -->
       <div class="text-center mb-4">
         <h2 class="section-title">Munkáim</h2>
         <p class="section-subtitle">Projektek és tanulmányaim során készült munkák</p>
       </div>
 
-
+      <!-- Projektek táblázat -->
       <div class="mb-5">
         <h4 class="subsection-title mb-3">
           <span class="title-icon"></span> Projektek
         </h4>
         <div class="table-responsive">
-          <table class="table table-hover">
+          <table class="table table-hover align-middle">
             <thead>
               <tr>
-                <th scope="col">Projekt neve</th>
-                <th scope="col">Év</th>
-                <th scope="col">Leírás</th>
-                <th scope="col" class="text-center">GitHub</th>
+                <th scope="col" style="width: 25%;">Projekt neve</th>
+                <th scope="col" style="width: 10%;">Év</th>
+                <th scope="col" style="width: 55%;">Leírás</th>
+                <th scope="col" class="text-center" style="width: 10%;">GitHub</th>
               </tr>
             </thead>
             <tbody>
+              
+              <!-- 1. Bomber játék -->
               <tr>
-                <td class="font-weight-bold">Bomber játék</td>
+                <td>
+                  <span class="fw-bold d-block">Bomber játék</span>
+                  <small class="text-muted">C# | .NET | WPF | Avalonia</small>
+                </td>
                 <td>2025</td>
                 <td>
-                  Eseményvezérelt alkalmazások egyetemi tantárgy keretein belül készített játék.
-                  A projekt WinForms, WPF és Avalonia .NET keretrendszerekben is elkészült.
+                  Eseményvezérelt alkalmazások egyetemi tantárgy keretein belül készült játék. Moduláris OOP architektúrával, eseményvezérelt logikával és kiterjedt MSTest unit tesztekkel az elvárt kódminőség biztosítására.
                 </td>
                 <td class="text-center">
                   <a href="https://github.com/adamcsider/EVA/tree/main" target="_blank" class="github-link" aria-label="GitHub repository">
@@ -84,14 +87,33 @@
                   </a>
                 </td>
               </tr>
+
+              <!-- 2. Parking Lot Reservation API -->
               <tr>
-                <td class="font-weight-bold">Saját weboldal</td>
+                <td>
+                  <span class="fw-bold d-block">Parking Lot Reservation API</span>
+                  <small class="text-muted">Python | FastAPI | Docker</small>
+                </td>
+                <td>2026</td>
+                <td>
+                  Tiszta architektúrájú REST API parkolóhelyek kezelésére és foglalási ütközések kiszűrésére. Teljes körű dokumentációval, Docker konténerizációval és pytest integrációs tesztekkel felvértezve.
+                </td>
+                <td class="text-center">
+                  <a href="https://github.com/adamcsider/parky" target="_blank" class="github-link" aria-label="GitHub repository">
+                    <img src="../assets/images/github.png" alt="GitHub" class="github-icon">
+                  </a>
+                </td>
+              </tr>
+
+              <!-- 3. Saját weboldal -->
+              <tr>
+                <td>
+                  <span class="fw-bold d-block">Saját weboldal</span>
+                  <small class="text-muted">HTML5 | CSS3 | Bootstrap</small>
+                </td>
                 <td>2025</td>
                 <td>
-                  Webfejlesztés egyetemi tantárgy beadandójaként készült weboldal. 
-                  Az oldal fejlesztése során hangsúlyt fektettem a reszponzivitásra, 
-                  ennek hála minden készüléken elérhető. Szigorúan betartottam a HTML5 
-                  és CSS szabványokat, a dizájnért Bootstrap könyvtár felel.
+                  Webfejlesztés egyetemi tantárgy beadandójaként készült reszponzív, statikus portfólió weboldal. Szigorúan betartva a modern HTML5 és CSS3 szabványokat, mobile-first megközelítéssel.
                 </td>
                 <td class="text-center">
                   <a href="https://github.com/adamcsider/adamcsider.github.io" target="_blank" class="github-link" aria-label="GitHub repository">
@@ -99,12 +121,30 @@
                   </a>
                 </td>
               </tr>
+
+              <!-- 4. AES-FFX Titkosító -->
+              <tr>
+                <td>
+                  <span class="fw-bold d-block">AES-FFX Titkosító</span>
+                  <small class="text-muted">Python | NIST Standard</small>
+                </td>
+                <td>2026</td>
+                <td>
+                  NIST-szabványnak megfelelő formátummegőrző titkosítási algoritmus (A2 és A10 paramétergyűjtemény) megvalósítása Pythonban, érzékeny adatok (pl. bankkártyaszámok) védelmének szimulálására.
+                </td>
+                <td class="text-center">
+                  <a href="#" target="_blank" class="github-link" aria-label="GitHub repository">
+                    <img src="../assets/images/github.png" alt="GitHub" class="github-icon">
+                  </a>
+                </td>
+              </tr>
+
             </tbody>
           </table>
         </div>
       </div>
 
-
+      <!-- Certifikációk táblázat -->
       <div>
         <h4 class="subsection-title mb-3">
           <span class="title-icon"></span> Certifikációk
