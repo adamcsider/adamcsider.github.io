@@ -23,7 +23,8 @@
      inkscape:pageopacity="0"
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
-     inkscape:document-units="px">
+     inkscape:document-units="px"
+     inkscape:export-bgcolor="#ffffff00">
     <inkscape:page
        x="0"
        y="0"
@@ -48,16 +49,16 @@
      id="layer1">
     <path
        id="rect5"
-       style="fill:#000000"
+       style="fill:#ffffff"
        d="m 0,0 v 15 482 15 h 15 482 15 V 497 15 0 H 497 15 Z M 15,15 H 497 V 497 H 15 Z" />
     <path
        id="rect5-4"
-       style="fill:#000000;stroke-width:0.919899"
+       style="fill:#ffffff;stroke-width:0.919899"
        d="m 20.506097,20.506097 v 13.79847 443.390863 13.79848 h 13.79847 443.390863 13.79848 V 477.69543 34.304567 20.506097 H 477.69543 34.304567 Z m 13.79847,13.79847 H 477.69543 V 477.69543 H 34.304567 Z" />
     <text
        xml:space="preserve"
        id="text6"
-       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:415.748px;font-family:Tahoma;-inkscape-font-specification:'Tahoma Bold';text-align:center;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect6);fill:#000000"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:415.748px;font-family:Tahoma;-inkscape-font-specification:'Tahoma Bold';text-align:center;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect6);fill:#ffffff"
        x="256"
        y="0"
        transform="translate(0,27.835457)"><tspan
